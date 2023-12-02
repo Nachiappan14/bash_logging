@@ -27,7 +27,7 @@ function mlog {
         disown $!;
         echo $! >> $fpath;
         # head -n 1 $fpath;
-        # unset fpath;
+        unset fpath;
         return
     else
         echo $(hash $1);
